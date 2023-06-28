@@ -10,8 +10,26 @@
 
     //ENTRADA
 
+     precoMamao = Number(prompt(`Informe o preço do Kg Mamão`));
+     precoMelancia = Number(prompt(`Informe o preço do Kg da Melancia`));
+     precoAbacate = Number(prompt(`Informe o preço da unidade do abacate`));
+     precoCebola = Number(prompt(`Informe o preço do Kg da cebola`));
+    const valorCompra = Number(prompt(`Informe a quantia de dinheiro reservado para a compra`));
 
     //PROCESSAMENTO
+
+    const total = ((precoMamao * 5) + (precoMelancia * 3) + (precoAbacate * 4) + (precoCebola * 1.1)).toFixed(2); 
+
+        if (valorCompra => total) {
+        alert(`Esse foi o preço da sua compra R$${total}, você tem dinheiro suficiente e sobrou R$${valorCompra - total}`).toFixed(2);
+        }
+
+        else if (valorCompra < total) {
+            alert(`Faltam R$${total - valorCompra}`).toFixed(2);
+        }
+
+
+    
 
 
     //SAÍDA

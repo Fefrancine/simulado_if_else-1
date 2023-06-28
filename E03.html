@@ -8,10 +8,28 @@
 
     //ENTRADA
 
+    const estado = prompt(`Para qual estado você deseja viajar, RS ou MG)`).toLocaleUpperCase();
+    const dias = prompt(`Quantos dias você deseja ficar?`);
+    const dinheiro = Number(prompt(`Informe quantos R$ você pretende gastar com a viagem?`));
+
 
     //PROCESSAMENTO
 
+    const RS = (180 * dias)
+    const MG = (210 * dias)  
+    
+    if (estado + RS < dinheiro) {
+        alert(`Boa viagem, você poderá viajar por ${dias} e seu custo será ${RS}`);
+    }
+    else if (estado + MG < dinheiro) {
+        alert(`Boa viagem, você poderá viajar por ${dias} e seu custo será ${MG}`);
+    }
 
+    else{
+        alert(`Dinheiro insuficiente`);
+    }
     //SAÍDA
+
+
 
 </script>
